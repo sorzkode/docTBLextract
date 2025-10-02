@@ -1,7 +1,8 @@
 # docTBLextract - Word to Excel Table Converter
 
-docTBLextract is a tool for converting tables from Microsoft Word documents to Excel worksheets. Each table in the Word document becomes a separate worksheet in the Excel file with automatic column width adjustment.
-<img width="458" height="328" alt="example" src="https://github.com/user-attachments/assets/affa984b-2f1a-41ec-800c-946b58056fb7" />
+docTBLextract is a tool for converting tables from Microsoft Word documents to Excel worksheets. Each table in the Word document becomes a separate worksheet in the Excel file with automatic column width adjustment.  
+
+<img width="458" height="328" alt="example" src="https://github.com/user-attachments/assets/affa984b-2f1a-41ec-800c-946b58056fb7" />  
 
 ## Features
 
