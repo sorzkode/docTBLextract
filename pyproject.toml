@@ -1,0 +1,48 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "doctblextract"
+version = "1.0.0"
+description = "Convert tables from Microsoft Word documents to Excel worksheets"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "sorzkode", email = "sorzkode@proton.me"}
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Office/Business",
+    "Topic :: Text Processing",
+    "Topic :: Utilities",
+]
+keywords = ["word", "excel", "table", "conversion", "docx", "xlsx"]
+requires-python = ">=3.8"
+dependencies = [
+    "python-docx",
+    "openpyxl",
+]
+
+[project.urls]
+Homepage = "https://github.com/sorzkode/doctblextract"
+Repository = "https://github.com/sorzkode/doctblextract"
+Issues = "https://github.com/sorzkode/doctblextract/issues"
+
+[project.scripts]
+doctblextract = "docTBLextract:main"
+
+[project.gui-scripts]
+doctblextract-gui = "docTBLextract:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["docTBLextract.py"]
